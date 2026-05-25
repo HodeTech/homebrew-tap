@@ -11,7 +11,7 @@ class Leakwatch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/HodeTech/Leakwatch/releases/download/v1.6.0/leakwatch_1.6.0_darwin_amd64.tar.gz"
-      sha256 "2b96ad227edbd12c68bf4a4b72b420f07e31465e4aa7134d84e0631e5ae6f51d"
+      sha256 "73544f217da1eca91e5a4a21ba3d2f3a72ece54d74300c48cc50941a162d9ec7"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -19,7 +19,7 @@ class Leakwatch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/HodeTech/Leakwatch/releases/download/v1.6.0/leakwatch_1.6.0_darwin_arm64.tar.gz"
-      sha256 "175df35fa0913dc432e27d477afec806ac3b15ae8d00382f230fa58bad82f5f8"
+      sha256 "71ee6c969564136ab3295db8e7408f2dba22c80fc98b324aed38783c420fa79f"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -30,14 +30,14 @@ class Leakwatch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/HodeTech/Leakwatch/releases/download/v1.6.0/leakwatch_1.6.0_linux_amd64.tar.gz"
-      sha256 "f1c6a652d0ff8040b7826daf7c21f8fef7f1a98bd28b2d5b6e7e95833da9a9fc"
+      sha256 "fb0587882caaebe7eddaa52376119bab80d489e4e7122518bc04ca3c57a4d589"
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/HodeTech/Leakwatch/releases/download/v1.6.0/leakwatch_1.6.0_linux_arm64.tar.gz"
-      sha256 "1a914f15590ea4d8728d2f95388a5ff35e6bdd909fc7712a4e131c74e73398fe"
+      sha256 "9737f06319d26e8e9b24e484ef47631d67e544b4f7a765f6e6e628815320dfad"
       define_method(:install) do
         bin.install "leakwatch"
       end
