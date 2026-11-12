@@ -5,21 +5,21 @@
 class Leakwatch < Formula
   desc "High-performance secret scanner for codebases, Git histories, and container images"
   homepage "https://github.com/HodeTech/Leakwatch"
-  version "1.8.2"
+  version "1.8.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.2/leakwatch_1.8.2_darwin_amd64.tar.gz"
-      sha256 "539524246c6773594b4eed60e7f31b441eca26613e02d6f37a8966fa0488583b"
+      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.3/leakwatch_1.8.3_darwin_amd64.tar.gz"
+      sha256 "01d4b7a4b621aa16e1ca881401678a26c8779e9f8d100f4dfa4be67afed25ec1"
 
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.2/leakwatch_1.8.2_darwin_arm64.tar.gz"
-      sha256 "b8874b8b462c885b08d61ec7339e114b28aaee2ffaace1c900289778a5757915"
+      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.3/leakwatch_1.8.3_darwin_arm64.tar.gz"
+      sha256 "a1536188ad270856d3ebe61adf52cd3862b0e2941822c0d2e82cfbe6a491c043"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -29,15 +29,15 @@ class Leakwatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.2/leakwatch_1.8.2_linux_amd64.tar.gz"
-      sha256 "be874488ccfdeaf63904e4a3d66ecc0ad1f6699d56ec73c8d8d19d94bfd215cc"
+      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.3/leakwatch_1.8.3_linux_amd64.tar.gz"
+      sha256 "6b34d2c57b66ac3a02e8d789fa36543e8884db7b823486475e6926b868f5b9cf"
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.2/leakwatch_1.8.2_linux_arm64.tar.gz"
-      sha256 "750f80970c1c5f514e0f20c5db64df8b5332708309436e4431a9afaa798e2305"
+      url "https://github.com/HodeTech/Leakwatch/releases/download/v1.8.3/leakwatch_1.8.3_linux_arm64.tar.gz"
+      sha256 "3c81024e815bca7dfc92de994c0b1d1480080feecd90d05efb6821b068a37176"
       define_method(:install) do
         bin.install "leakwatch"
       end
